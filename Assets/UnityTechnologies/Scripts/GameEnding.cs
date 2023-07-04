@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using YooAsset;
 
 public class GameEnding : MonoBehaviour
 {
@@ -42,7 +42,10 @@ public class GameEnding : MonoBehaviour
         {
             if (doRestart)
             {
-                SceneManager.LoadScene(0);
+                var package = YooAssets.GetPackage("DefaultPackage");
+                var sceneMode = UnityEngine.SceneManagement.LoadSceneMode.Single;
+                bool activateOnLoad = true;
+                YooAssets.LoadSceneAsync("MainScene", sceneMode, activateOnLoad);
             }
             else
             {

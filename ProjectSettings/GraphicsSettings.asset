@@ -3,7 +3,7 @@
 --- !u!30 &1
 GraphicsSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 15
+  serializedVersion: 14
   m_Deferred:
     m_Mode: 1
     m_Shader: {fileID: 69, guid: 0000000000000000f000000000000000, type: 0}
@@ -13,6 +13,9 @@ GraphicsSettings:
   m_ScreenSpaceShadows:
     m_Mode: 1
     m_Shader: {fileID: 64, guid: 0000000000000000f000000000000000, type: 0}
+  m_LegacyDeferred:
+    m_Mode: 1
+    m_Shader: {fileID: 63, guid: 0000000000000000f000000000000000, type: 0}
   m_DepthNormals:
     m_Mode: 1
     m_Shader: {fileID: 62, guid: 0000000000000000f000000000000000, type: 0}
@@ -34,17 +37,6 @@ GraphicsSettings:
   - {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10783, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 4800000, guid: 67f9497810829eb4791ec19e95781e51, type: 3}
-  - {fileID: 4800000, guid: 2c459b89a7c8b1a4fbefe0d81341651c, type: 3}
-  - {fileID: 4800000, guid: d7640629310e79646af0f46eb55ae466, type: 3}
-  - {fileID: 4800000, guid: f75014305794b3948a3c6d5ccd550e05, type: 3}
-  - {fileID: 4800000, guid: 0d8afcb51cc9f0349a6d190da929b838, type: 3}
-  - {fileID: 4800000, guid: d7640629310e79646af0f46eb55ae466, type: 3}
-  - {fileID: 4800000, guid: f997a3dc9254c44459323cced085150c, type: 3}
-  - {fileID: 4800000, guid: 81af42a93ade3dd46a9b583d4eec76d6, type: 3}
-  - {fileID: 4800000, guid: 51bcf79c50dc92e47ba87821b61100c3, type: 3}
-  - {fileID: 4800000, guid: 34a819c9e33402547a81619693adc8d5, type: 3}
-  - {fileID: 4800000, guid: 382151503e2a43a4ebb7366d1632731d, type: 3}
   m_PreloadedShaders: []
   m_PreloadShadersBatchTimeLimit: -1
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
@@ -57,7 +49,6 @@ GraphicsSettings:
   m_LightmapStripping: 0
   m_FogStripping: 0
   m_InstancingStripping: 0
-  m_BrgStripping: 0
   m_LightmapKeepPlain: 1
   m_LightmapKeepDirCombined: 1
   m_LightmapKeepDynamicPlain: 1
@@ -73,6 +64,3 @@ GraphicsSettings:
   m_DefaultRenderingLayerMask: 1
   m_LogWhenShaderIsCompiled: 0
   m_SRPDefaultSettings: {}
-  m_LightProbeOutsideHullStrategy: 0
-  m_CameraRelativeLightCulling: 0
-  m_CameraRelativeShadowCulling: 0
