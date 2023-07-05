@@ -2,3 +2,5 @@ Library/
 Temp/
 UserSettings/Layouts/
 Logs/
+.vs/
+obj/
