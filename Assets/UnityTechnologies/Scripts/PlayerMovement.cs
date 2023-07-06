@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float turnSpeed = 20f;
     Rigidbody m_Rigidbody;
     AudioSource m_AudioSource;
+    public VariableJoystick variableJoystick;
     void Start()
     {
         m_Animator = GetComponent<Animator>();
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+        horizontal = horizontal == 0 ? variableJoystick.Horizontal : horizontal;
+        vertical = vertical == 0 ? variableJoystick.Vertical : vertical;
         m_Movement.Set(horizontal, 0f, vertical);
         m_Movement.Normalize();
 

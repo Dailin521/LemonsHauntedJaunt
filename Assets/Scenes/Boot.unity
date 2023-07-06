@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayMode: 2
   sliderText: {fileID: 191810270}
-  version: V1.2
+  version: V1.3
 --- !u!4 &92925799
 Transform:
   m_ObjectHideFlags: 0
