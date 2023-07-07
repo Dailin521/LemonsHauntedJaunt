@@ -12,13 +12,28 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody m_Rigidbody;
     AudioSource m_AudioSource;
     public VariableJoystick variableJoystick;
+    public float screenWidthhRate;
+    public float screenHeightRate;
     void Start()
     {
         m_Animator = GetComponent<Animator>();
         m_Rigidbody = GetComponent<Rigidbody>();
         m_AudioSource = GetComponent<AudioSource>();
-    }
+        CaculateUIRate();
 
+    }
+    void CaculateUIRate()
+    {
+        screenWidthhRate = Screen.width / 1920.0f;
+        screenHeightRate = Screen.height / 1080.0f;
+
+        float screenMinRate = Mathf.Min(screenWidthhRate, screenHeightRate);
+        variableJoystick.transform.localScale = new Vector3(screenMinRate, screenMinRate, screenMinRate);
+        if (screenMinRate == screenWidthhRate && screenWidthhRate < (screenHeightRate + 0.2))
+        {
+            variableJoystick.transform.localScale *= 1.5f;
+        }
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
